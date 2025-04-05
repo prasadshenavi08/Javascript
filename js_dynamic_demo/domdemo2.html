@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Demo 2</title>
+</head>
+<body>
+    <h1>Dom Demo</h1>
+    <label for="color" style="font-size: 25px;">Enter your color</label>
+    <input type="text" id="color">
+    <button onclick="setcolor()">Set Background</button>
+
+    <script>
+        function setcolor(){
+            let c1 = document.getElementById("color").value
+            document.body.style.backgroundColor = c1;
+            
+        }
+    </script>
+</body>
+</html>

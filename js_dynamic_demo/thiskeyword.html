@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let p1= {
+            name:'ps',
+            add:'pune',
+            f1:function show(){
+                // document.write("hello "+ this.name+" live in "+this.add);
+            document.write(`hello ${this.name} live in ${this.add}`)
+            }
+        }
+        p1.f1()
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    JavaScript can "react" on these events.
+    JavaScript lets you execute code when events are detected.
+    <ol><li>Mouse Event</li></ol>
+    <ul>
+    <li>onclick</li>
+        <li>onmouseover</li>
+        <li>onconextmenu</li>
+        <li>onmouseout</li>
+    </ul>
+    <ul>
+        <li>Keyboard Event</li>
+        <li>onkeydown</li>
+        <li>onkeyup</li>
+        <li>onkeypress</li>
+    </ul>
+    <ul>
+        <li>Form Event</li>
+        <li>onfocus</li>
+        <li>onblur</li>
+        <li>onsubmit</li>
+    </ul>
+    <ul>
+        <li>Document Event</li>
+        <li>onload</li>
+        <li>onunload</li>
+    </ul>
+    <br>
+    Event Listeners
+    An event listener is a method that "listens" for specified events to occur on an element.
+    <h1>Events</h1>
+    <button id="btn" >Click me</button>
+    <script>
+        const button =document.getElementById("btn");
+        button.addEventListener("click", function(f1){
+            alert("button is clicked");
+        });
+    </script>
+</body>
+</html>

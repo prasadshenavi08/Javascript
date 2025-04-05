@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Dynamic DropDown</title> 
+</head> 
+<body> 
+    
+    Enter any name <input type="text" id="txtname"> 
+    <button onclick="addname()">Add Name</button> 
+    <select name="" id="friendlist"> 
+ 
+    </select> 
+    <!-- Enter first number <input type="number"  id="txtno1"> 
+    Enter second number <input type="number"  id="txtno2"> 
+    <button onclick="f1()">Add</button> 
+    <button onclick="f2()">Subtract</button> 
+    <button onclick="f3()">Multiply</button>  -->
+     
+    <p id="p1"></p> 
+    <script> 
+        let elem = document.getElementById("friendlist") 
+        function addname(){ 
+            let n = document.getElementById("txtname").value 
+            elem.innerHTML = elem.innerHTML +  "<option>"+ n + "</option>" 
+        } 
+        // function addnumbers(a,b){ 
+        //     return a+b 
+        // } 
+        // function f1(){ 
+        // let n1 = parseInt(document.getElementById("txtno1").value) 
+        // let n2 = parseInt(document.getElementById("txtno2").value) 
+        // let e2 = document.getElementById("p1") 
+        // e2.innerHTML=("Addition : " + addnumbers(n1,n2)) 
+        // } 
+ 
+        // function f2(){ 
+        // let n1 = parseInt(document.getElementById("txtno1").value) 
+        // let n2 = parseInt(document.getElementById("txtno2").value) 
+        // let e2 = document.getElementById("p1") 
+        // e2.innerHTML=("Subtraction : " + (n1-n2)) 
+        // } 
+
+        // function f3(){ 
+        // let n1 = parseInt(document.getElementById("txtno1").value) 
+        // let n2 = parseInt(document.getElementById("txtno2").value) 
+        // let e2 = document.getElementById("p1") 
+        // e2.innerHTML=("Multiply : " + (n1*n2)) 
+        // } 
+    </script> 
+</body> 
+</html>

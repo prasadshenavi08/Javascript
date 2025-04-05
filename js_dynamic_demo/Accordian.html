@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordian</title>
+</head>
+<body>
+    <p id="p1">This is sample Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, asperiores quis laudantium ipsum aspernatur maiores architecto consequuntur, officiis magnam beatae soluta nobis veritatis doloremque sunt temporibus, rem sed consectetur libero!</p>
+    <button onclick="hide()">^</button>
+    <button onclick="show()">v</button>
+
+    <script>
+        let elem=document.getElementById("p1")
+        function hide(){
+            elem.style.visibility="hidden";
+        }
+        function show(){
+            elem.style.visibility="visible";
+        }
+    </script>
+</body>
+</html>

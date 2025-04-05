@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Table</title>
+</head>
+<body>
+    <h1>Student data</h1>
+
+    <table id="student"></table>
+
+    <script>
+        let s1="<tr><th>Roll</th><th>fname</th><th>marks</th></tr>";
+        for(i=1;i<=2;i++){
+            roll=prompt("Enter rollno");
+            fname=prompt("enter name");
+            marks=prompt("enter marks");
+            s1=s1+"<tr>"+"<td>"+roll+"</td>"+"<td>"+fname+"</td>"+"<td>"+marks+"</td>"+"</tr>";
+        }
+
+        let ele= document.getElementById("student");
+        ele.innerHTML=s1;
+    </script>
+</body>
+</html>

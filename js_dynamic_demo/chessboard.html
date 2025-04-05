@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Chess Board</title>
+    <style>
+        .odd {
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+    
+        .even {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="margin-left:320px;">Chess Board</h1>
+    <script>
+        const pieces = [
+            ["&#9820;", "&#9822;", "&#9821;", "&#9819;", "&#9818;", "&#9821;", "&#9822;", "&#9820;"],
+            ["&#9823;", "&#9823;", "&#9823;", "&#9823;", "&#9823;", "&#9823;", "&#9823;", "&#9823;"],
+            ["", "", "", "", "", "", "", ""],
+            ["", "", "", "", "", "", "", ""],
+            ["", "", "", "", "", "", "", ""],
+            ["", "", "", "", "", "", "", ""],
+            ["&#9817;", "&#9817;", "&#9817;", "&#9817;", "&#9817;", "&#9817;", "&#9817;", "&#9817;"],
+            ["&#9814;", "&#9816;", "&#9815;", "&#9813;", "&#9812;", "&#9815;", "&#9816;", "&#9814;"]
+        ];
+    
+        for (let i = 0; i < 8; i++) {
+            for (let j = 0; j < 8; j++) {
+                if (i % 2 == 0 && j % 2 == 1 || i % 2 == 1 && j % 2 == 0)
+                    document.write("<div class='odd'>" + pieces[i][j] + "</div>");
+                else
+                    document.write("<div class='even'>" + pieces[i][j] + "</div>");
+            }
+            document.write("<br>");
+        }
+    
+        let a1 = document.getElementsByTagName("div");
+        for (let i = 0; i < a1.length; i++) {
+            a1[i].style.width = "100px";
+            a1[i].style.height = "100px";
+            a1[i].style.border = "1px solid black";
+            a1[i].style.display = "inline-block";
+            a1[i].style.fontSize = "50px";
+            a1[i].style.textAlign = "center";
+            a1[i].style.lineHeight = "100px"; // to vertically center the chess pieces
+        }
+    </script>
+</body>
+</html>

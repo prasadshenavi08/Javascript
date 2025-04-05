@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="f1()">click me</button>
+    <p id="demo"></p>
+    <script>
+        name="prasad shenavi";
+        document.write(name);
+        document.write("<br>slice method ="+name.slice(3,8)); //needs strat index and end index. End index will be excluded
+        document.write("<br>substr = "+name.substr(3,7));   
+        document.write("<br>concat ="+name.concat("ps"));//attach str 
+        document.write("<br>charCodeAt = "+name.charCodeAt(4)); //return unicode
+        document.write("<br>charAt = "+name.charAt(4)); //return index
+        document.write("<br>trim = "+name.trim()); //remove extra space
+        document.write("<br>"+name.length);
+
+
+        // str is immutable //content not change
+        // s1="        pashya      "
+        // document.write("<br>"+s1.length)
+        // s1= s1.trim();
+        // document.write("<br>"+s1);
+
+
+        // s1="Prasad:is:good:boy"  //in split : are remove
+        // document.write("<br>"+s1)
+        // a=s1.split(":");
+        // for(i=0; i<a.length;i++){
+        //     document.write("<br>"+a[i]);
+        // }
+
+        
+        let b3="prasad";
+        let reversestr="";
+        for(i=0;i<b3.length;i++){
+            reversestr = b3.charAt(i) + reversestr;
+        }
+        document.write("<br>"+reversestr);
+
+
+
+        function f1(){
+            var text=prompt("Enter name");
+            var a1 = document.getElementById("demo").innerHTML;
+            document.getElementById("demo").innerHTML=text.toUpperCase();
+        }
+        
+
+    </script>
+</body>
+</html>

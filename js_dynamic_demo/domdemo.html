@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation </title>
+</head>
+<body>
+    <h1>Dom Demo</h1>
+    <p>Get element by tag name</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis a ipsa, tenetur quaerat aut asperiores incidunt deserunt recusandae! Est, quidem!</p>
+    <div>
+        This is div2
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ad quasi cumque, sequi vero harum.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis a ipsa, tenetur quaerat aut asperiores incidunt deserunt recusandae! Est, quidem!</p>
+    <div>
+        This is div2
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maxime unde amet totam, magnam dolores suscipit labore iure sint reprehenderit deleniti corporis odit, libero fugiat aliquid, molestias ipsa vitae consequatur!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis a ipsa, tenetur quaerat aut asperiores incidunt deserunt recusandae! Est, quidem!</p>
+    <div>
+        This is div3
+    </div>
+    <script>
+            let a1 = document.getElementsByTagName("p")
+            for(i=0;i<a1.length;i++){
+                a1[i].style.color="red"
+                a1[i].style.backgroundColor="white";
+                a1[i].style.fontSize= "25px";
+            }
+    </script>
+</body>
+</html>

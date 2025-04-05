@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array in JS</h1>
+    <p>array is collction of element</p>
+    <p>the synax to create an array in js is</p>
+    <p>let arraynamme=[value1,value2]</p>
+    <p>each array element  can be accessed by arrayname[index number]</p>
+    <p>index number always start with 0</p>
+    <p>array has built in method reverse() to reverse the array</p>
+   <p>array has built in method push() to add element at end</p>
+   <p>array has built in method unshift() to add element at beginning</p>
+   <p>array has built in method pop() to delete element at end</p>
+   <p>array has built in method shift() to delete element at beginning</p>
+   <script>
+        let friend =["ps","ds","os"]
+        document.write(friend[0]+"<br>")
+        document.write(friend[1]+"<br>")
+        document.write(friend.length+"<br>") 
+        document.write(friend[2].length+"<br>")
+        
+        friend.reverse();
+        document.write("All Array Elements");
+        for(i=0;i<friend.length;i++){
+            document.write("<br>"+friend[i]+"<br>")
+        }
+
+       
+        // document.write("All Array Elements in reverse order");
+        // for(i=friend.length-1;i>=0;i--){
+        //     document.write("<br>"+friend[i])
+        // }
+
+        let name = friend.join("::")
+        document.write(name+"<br>");
+        
+        let a="pashya,pass,jou"
+        document.write("<br>")
+        let n = a.split(",")
+       for(i=0;i<n.length;i++){
+        document.write("<br>"+n[i])
+       }
+
+    friend.push("pnya");
+    document.write("All push Elements");
+        for(i=0;i<friend.length;i++){
+            document.write("<br>"+friend[i]+"<br>")
+        }
+
+      friend.unshift("unique");
+        document.write("All Array unshift Elements");
+        for(i=0;i<friend.length;i++){
+            document.write("<br>"+friend[i]+"<br>")
+        }
+
+
+        friend.pop();
+        document.write("All Array pop Elements");
+        for(i=0;i<friend.length;i++){
+            document.write("<br>"+friend[i]+"<br>")
+        }
+        friend.shift();
+        document.write("All Array shift Elements");
+        for(i=0;i<friend.length;i++){
+            document.write("<br>"+friend[i]+"<br>")
+        }
+
+        friend.sort();
+        document.write("All Array sort Elements");
+        for(i=0;i<friend.length;i++){
+            document.write("<br>"+friend[i]+"<br>")
+        }
+
+        friend.splice(1,0,["ks","li","oi","lo"]);
+        document.write("<br>All Array splice Elements");
+        for(i=0;i<friend.length;i++){
+            document.write("<br>"+friend[i]+"<br>")
+        }
+
+        let a1=[]
+        for (let i = 0; i <=2; i++) {
+            no = prompt("enter number");
+            a1.push(no)
+        }
+
+        document.write("the given array")
+        for (let i = 0; i <=2; i++) {
+            document.write(a1[i]+",")
+        }
+
+        
+    </script>
+</body>
+</html>

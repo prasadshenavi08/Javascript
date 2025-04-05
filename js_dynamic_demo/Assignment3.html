@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment on Arrays1</title>
+</head>
+<body>
+    
+    <script>
+  // 1. Write a program to accept array of 10 elements and print them in reverse order.
+        // Function to reverse and print an array
+            // function reverseArray(arr) {
+            //         console.log("Original array: ", arr);
+            //         let reversedArr = arr.reverse();
+            //         console.log("Reversed array: ", reversedArr);
+            //     }
+
+            //     // Accepting 10 elements from the user
+            //     let array = [];
+            //     for (let i = 0; i < 10; i++) {
+            //         let element = prompt(`Enter element ${i + 1}:`);
+            //         array.push(element);
+            //     }
+
+            //     // Calling the function to reverse and print the array
+            //     reverseArray(array);
+
+
+// #################################################################
+                    // Example array of 10 elements
+            // let array = [25, 17, 33, 9, 12, 56, 45, 5, 19, 22];
+            
+            // // Reverse the array
+            // let reversedArray = array.reverse();
+
+            // // Print the reversed array
+            // document.write("Array in reverse order: " + reversedArray.join(", "));
+// ****************************************************************************************************************
+
+ // 2. Write a program to accept array of 10 elements and print their sum.
+                // Example array of 10 elements
+            // let array = [25, 17, 33, 9, 12, 56, 45, 5, 19, 22];
+            
+            // // Calculate the sum of the array elements
+            // let sum = array.reduce(function(total, num) {
+            //     return total + num;
+            // }, 0);
+
+            // // Print the sum
+            // document.write("The sum of the array elements is: " + sum);
+ // ****************************************************************************************************************
+
+//  3. Write a program to accept array of 10 elements and print the largest number.
+// ****************************************************************************************************************
+            // let a1 = [];  // Declare an empty array
+
+            // for (let i = 0; i < 10; i++) {
+            //     let no = parseInt(prompt("Enter a number"));  // Prompt the user to enter a number
+            //     a1.push(no);  // Push the entered number into the array
+            // }
+
+            // document.write("The given array: ");
+            // for (let i = 0; i < 10; i++) {
+            //     document.write(a1[i] + " ");  // Print each element of the array
+            // }
+
+            // // Assume the first element is the largest number
+            // let max = a1[0];
+
+            // for (let i = 1; i < a1.length; i++) {
+            //     if (a1[i] > max) {
+            //         max = a1[i];  // Update max if the current element is larger
+            //     }
+            // }
+
+            // document.write("<br>Largest number is: " + max);  // Print the largest number
+
+            
+// ###########################################################################
+            //         // Example array of 10 elements
+            // let array = [25, 17, 33, 9, 12, 56, 45, 5, 19, 22];
+            
+            // // Find the largest number using Math.max and spread operator
+            // let largest = Math.max(...array);
+
+            // // Print the largest number
+            // document.write("The largest number is: " + largest);
+
+// *******************************************************************************************************************
+// 4. Write a program to accept array of 10 elements and print the smallest number.
+            // Example array of 10 elements
+            // let array = [25, 17, 33, 9, 12, 56, 45, 5, 19, 22];
+                
+            //     // Find the smallest number using Math.min and spread operator
+            //     let smallest = Math.min(...array);
+
+            //     // Print the smallest number
+            //     document.write("The smallest number is: " + smallest);
+
+// ****************************************************************************************************************
+
+// 5. Write a program to print accepted array in sorted order.
+            // let array = [15, 12, 45, 63, 12, 15];
+                
+            //     // Sort the array in ascending order
+            //     array.sort(function(a, b) {
+            //         return a - b; // Compare the elements for ascending order
+            //     });
+
+            //     // Print the sorted array
+            //     document.write("Array in ascending order: " + array.join(", "));
+// ****************************************************************************************************************
+
+// 6. Write a program to print accepted array in descending order.
+            // let arr = [15, 12, 45, 63, 12, 15];
+                
+            //     // Sort the array in descending order
+            //     arr.sort(function(a, b) {
+            //         return b - a; // Compare the elements in reverse order
+            //     });
+
+            //     // Print the sorted array
+            //     document.write("Array in descending order: " + arr.join(", "));
+
+
+// ****************************************************************************************************************
+
+// 7. Write a program to print the accepted arrays duplicate numbers
+            // let arr = [15, 12, 45, 63, 12, 15];
+            
+            // // Loop through the array
+            // for (let i = 0; i < arr.length; i++) {
+            //     for (let j = i + 1; j < arr.length; j++) {
+            //         // Check if the numbers are the same (duplicate)
+            //         if (arr[i] === arr[j]) {
+            //             document.write(arr[i] + "<br>");
+            //         }
+            //     }
+            // }
+// ****************************************************************************************************************
+
+// 8. Write a program to accept a single number and convert it to array of single digit number arrayI/P : 97436
+// o/p : {9,7,4,3,6}
+// ****************************************************************************************************************
+            // function arr(){
+            //     a=[]
+            //     no=97436;
+            //     while(no>0){
+            //         d = no%10       //givre last digit
+            //         a.unshift(d);
+            //         no = Math.floor(no/10)      //remove decimal part
+            //     }
+            //     for(i=0;i<a.length;i++){
+            //         document.write("<br>"+a[i])
+            //     }
+
+            // }
+
+// **********************************************************************************************************
+// 9. I.P.={9,7,4,3,6}o/p no=97436
+                // no =     a                 i
+                // 97436     9,7,4,3,6         0
+            // function arr(a){
+            //    no= 0;
+            //    for(i=0;i<a.length;i++){
+
+            //        no = no*10+a[i]
+            //    }
+            //     return no;
+            // }
+            // a =[9,7,4,3,6]
+            // no =arr(a);
+            // document.write(no);
+
+    
+  </script>
+</body>
+</html>

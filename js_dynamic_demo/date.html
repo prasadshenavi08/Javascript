@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+</head>
+<body>
+    <h1>Date</h1>
+    Enter your birthdate<input type="date" id="txtbirthdate">
+    <button onclick="findage()">Calculate Age</button>
+
+    <script>
+        function findage(){
+            let dt = document.getElementById("txtbirthdate").value
+            let d1 = new Date(dt)
+            let d2 = new Date()
+            document.write("Your Age = "+(d2.getFullYear() - d1.getFullYear()))
+            // document.write("<br>"+(d2-d1))
+        }
+
+    </script>
+    
+</body>
+</html>

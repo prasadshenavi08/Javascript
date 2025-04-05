@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <label for="">Enter String</label>
+<input type="text" name="" id="txtname">
+<button onclick="reversestr()">Reverse</button>
+
+<script>
+    function reversestr(){
+        let name = document.getElementById("txtname").value;  // Get the value inside the function
+        let x = (n =>n.split("").reverse().join(""))
+        alert (x(name));
+        // let a1 = n.split("");
+        // a1.reverse();
+        // let r = a1.join("");
+        // document.write(r);  // Write the reversed string
+    }
+</script>
+
+</body>
+</html>

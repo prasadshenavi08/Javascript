@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Example</title>
+</head>
+<body>
+    js obj notation
+    lightweight data interchange
+    only text format
+    all value is str  <br>
+    JSON.stringify() is method in js to convert a js obj into json format. <br>
+    JSON .parse() this method convert json into js objext  <br>
+
+    <script>
+        let s1 = {      //js obj
+            name:"ps",
+            add:"pune",
+            skills:['java','js','html']
+
+    }
+
+    //convert json format
+    let a = JSON.stringify(s1)
+    document.write(a);
+
+
+    //comvert into js obj
+    let js = {"name":"pana","add":"murgud"}
+    let obj = JSON.parse(js)
+    document.write(obj);
+    for (p in obj){
+        document.write(p)
+        document.write(obj[p])
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="d-flex justify-content-center align-items-center">
+    <div class="text-center">
+        <p id="p1" class="display-4">Digital Clock</p>
+        <button class="btn btn-primary" onclick="start()">Start</button>
+        <button class="btn btn-danger" onclick="stop()">Stop</button>
+    </div>
+
+    <script>
+        let elem = document.getElementById("p1");
+
+        function show() {
+            let d1 = new Date();
+            elem.innerHTML = d1.toLocaleTimeString();
+        }
+
+        function start() {
+            n = setInterval(show, 1000);  
+        }
+
+        function stop() {
+            clearInterval(n);  
+        }
+    </script>
+    
+    
+</body>
+</html>

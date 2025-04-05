@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+    <script>
+        // function fact(no){
+        //     f= 1
+        //     for(i=1;i<=no;i++){
+        //         f = f*i
+        //     }
+        //     return f
+        // }
+        
+        function fact(no){
+            if(no==1){
+                return 1
+            }else{
+                return no * fact(no-1)
+            }
+        }
+        no = 5
+        x = fact(no)
+        document.write(x)
+    </script>
+</body>
+</html>

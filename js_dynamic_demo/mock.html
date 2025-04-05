@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic From</title>
+</head>
+<body>
+    <!-- <label for="fname">Enter Your Name</label>
+    <input type="text" id="fname">
+    <button onclick="f1()">Greeed</button>
+    <p id="demo"></p>
+
+    <script>
+        function f1(){
+            let p1 = document.getElementById("fname").value
+            // document.write("Welcome "+p1);
+            let d1 = document.getElementById("demo")
+            d1.innerHTML = "Welcome "+p1
+                }
+
+                let a = [56,595,4,4984,2194,54]
+                document.write(Math.max(...a))
+    </script> -->
+
+
+    <!-- <label for="opt">Enter your option</label>
+    <input type="text" name="opt" id="opt">
+    <button onclick="f1()">Add Options</button>
+
+    <select name="" id="optlist">
+
+    </select>
+
+    <script>
+        function f1(){
+            let opt1 = document.getElementById("opt").value
+            let ele = document.getElementById("optlist");
+            ele.innerHTML = ele.innerHTML+ "<option>"+opt1+"</option>"
+        }
+
+
+        function combine(){
+            let a=1;
+            let b='2';
+            let c=3;
+            return a+b+c;
+
+        }
+        console.log(combine());
+    </script> -->
+
+    <!-- <label for="sample">Enter a number</label>
+    <input type="number" id="sample">
+    <button onclick="processNumber()">Submit</button>
+    <p id="demo"></p>
+
+    <script>
+        function processNumber() {
+            let num = document.getElementById("sample").value;
+            let output = "";
+            let r = document.getElementById("demo");
+
+            if (num >= 100 && num <= 999) {
+                // Sum the digits of a 3-digit number
+                let sum = Math.floor(num / 100) + Math.floor((num % 100) / 10) + (num % 10);
+                output = "Sum of digits: " + sum;
+            } else if (num < 100) {
+                // Generate multiplication table
+                for (let i = 1; i <= 10; i++) {
+                    output += num + " x " + i + " = " + (num * i) + "<br>";
+                }
+            } else {
+                output = "Please enter a valid number.";
+            }
+
+            r.innerHTML = output;
+        }
+    </script> -->
+
+
+    <!-- 18/10/2024 -->
+    <label for="sample">Enter a number</label>
+<input type="number" id="sample">
+<button onclick="processNumber()">Submit</button>
+<p id="demo"></p>
+
+<script>
+    function processNumber() {
+        let num = document.getElementById("sample").value;
+        let output = "";
+        let r = document.getElementById("demo");
+
+        if (num >= 100 && num <= 999) {
+            // Sum of numbers from 1 to the given 3-digit number
+            let sum = 0;
+            for (let i = 1; i <= num; i++) {
+                sum += i;
+            }
+            output = "Sum of numbers from 1 to " + num + " is: " + sum;
+        } else if (num < 100) {
+            // Generate multiplication table for smaller numbers
+            for (let i = 1; i <= 10; i++) {
+                output += num + " x " + i + " = " + (num * i) + "<br>";
+            }
+        } else {
+            output = "Please enter a valid number.";
+        }
+
+        r.innerHTML = output;
+    }
+</script>
+
+
+</body>
+</html>

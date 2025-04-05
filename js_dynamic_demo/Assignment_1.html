@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment</title>
+</head>
+<body>
+    <script>
+        // function f1(){
+        //      p1 = prompt("Enter number");
+        //     if(p1>=0){
+        //         document.write("number is positive")
+        //     }else if(p1==0){         
+        //         document.write("number is Zero");
+        //     }
+        //     else{
+        //         document.write("number is  negative");
+        //     }
+        // }
+       
+        // function checknumber(no){
+        //     if(no>0){
+        //       document.write("number is positive");
+        //     }else if(no==0){
+        //       document.write("number is Zero");
+        //     }else{
+        //         document.write("number is  negative");
+        //     }
+        // }
+        // checknumber(0);
+
+        // function f1(){
+        //     p1 = prompt("Enter Number");
+        //     if(p1%2==0){
+        //         document.write("Number is even");
+        //     }else{
+        //         document.write("Number is odd");
+        //     }
+        // }
+
+
+// *************************************************************************************************************************************
+// Write a JavaScript function that takes a number as input and:
+// •	Prints "The number is positive" if the number is greater than 0.
+// •	Prints "The number is zero" if the number is equal to 0.
+// •	Prints "The number is negative" if the number is less than 0.
+// Sample Input:
+// checkNumber(5);  // Output: The number is positive
+// checkNumber(0);  // Output: The number is zero
+// checkNumber(-3); // Output: The number is negative
+
+// function checknumber(no){
+//     if(no>0){
+//         document.write("The number is positive");
+//     }else if(no==0){
+//         document.write("The number is zero");
+//     }else{
+//         document.write("The number is negative")
+//     }
+// }
+
+//     checknumber(0);
+
+// *************************************************************************************************************************************
+// Write a function that checks if a given number is even or odd using an if-else statement.
+// Sample Input:
+// checkEvenOdd(4); // Output: The number is even
+// checkEvenOdd(7); // Output: The number is odd
+
+// function checkEvenOdd(no){
+//     if(no%2==0){
+//         document.write("The number is even");
+//     }else{
+//         document.write("The number is odd");
+//     }
+// }
+// checkEvenOdd(4);
+// checkEvenOdd(7);
+
+
+// *************************************************************************************************************************************
+// 3. Grade Calculator
+// Write a JavaScript function that takes a student's score (out of 100) and prints the corresponding grade:
+// •	Score >= 90: Print "A"
+// •	Score >= 80 and < 90: Print "B"
+// •	Score >= 70 and < 80: Print "C"
+// •	Score >= 60 and < 70: Print "D"
+// •	Score < 60: Print "F"
+
+            // var mark = prompt("Enter number");
+            // var mark=score(mark)
+            // function score(mark){
+            //     if(mark>=90){
+            //     document.write("A");
+            //     }else if(mark>=80 && mark<90){
+            //     document.write("B");
+            //     }else if(mark>=70 && mark<80){
+            //     document.write("C");
+            //     }
+            //     else if(mark>=60 && mark<70){
+            //     document.write("D");
+            //     }
+            //     else{
+            //         document.write("F");
+            //     }
+            // }
+
+// *************************************************************************************************************************************
+// 4. Simple Voting Eligibility
+// Create a function that takes an age as input and determines if the person is eligible to vote (age ≥ 18). Print:
+// •	"You are eligible to vote" if the person is 18 or older.
+// •	"You are not eligible to vote" if the person is younger than 18.
+
+// var person =prompt("Enter Age")
+// var person =checkVotingEligibility(person);
+// function checkVotingEligibility(person){
+//     if(person>18){
+//         document.write("You are eligible to vote")
+//     }else{
+//         document.write("You are not-eligible to vote")
+//     }
+// }
+
+
+// *************************************************************************************************************************************
+// 5. Maximum of Three Numbers
+// Write a function that takes three numbers as input and prints the largest of the three using if-else.
+// Sample Input:
+// findMax(3, 5, 9); // Output: 9
+// findMax(1, 4, 2); // Output: 4
+
+//  function findMax(a,b,c){
+//             if(a>b&&a>c){
+//                 document.write(a)
+//             }else if(b>c){
+//                 document.write(b)
+//             }
+//             else{
+//                 document.write(c);
+//             }
+//         }
+//         findMax(5,6,8)
+
+
+// *************************************************************************************************************************************
+// 6. Traffic Light Simulation
+// Create a function that simulates traffic light behavior:
+// •	Input: A string representing the color of the traffic light ("red", "yellow", or "green").
+// •	Output:
+// o	If the light is red, print "Stop".
+// o	If the light is yellow, print "Get ready".
+// o	If the light is green, print "Go".
+// Sample Input:
+// trafficLight("red");    // Output: Stop
+// trafficLight("yellow"); // Output: Get ready
+// trafficLight("green");  // Output: Go
+        
+// function trafficLightBehavior(color) {
+    
+//     if (color === "red") {
+//         document.write("<br>Stop!");
+//     } else if (color === "yellow") {
+//         document.write("<br>Prepare to stop.");
+//     } else if (color === "green") {
+//         document.write("<br>Go!");
+//     } else {
+//         document.write( "<br>Invalid color! Please input 'red', 'yellow', or 'green'.");
+//     }
+// }
+
+// Example usage:
+// document.write(trafficLightBehavior("red"));    // Output: Stop!
+// document.write(trafficLightBehavior("yellow")); // Output: Prepare to stop.
+// document.write(trafficLightBehavior("green"));  // Output: Go!
+// document.write(trafficLightBehavior("blue"));   // Output: Invalid color! Please input 'red', 'yellow', or 'green'.
+
+
+// *************************************************************************************************************************************
+//  7. Leap Year Checker
+// Write a function that checks if a given year is a leap year. A year is a leap year if:
+// •	It is divisible by 4 but not divisible by 100, or
+// •	It is divisible by 400.
+// Sample Input:
+// isLeapYear(2020); // Output: Leap year
+// isLeapYear(1900); // Output: Not a leap year
+
+// var year = prompt("Enter year");
+// let year = isLeapYear(year)
+// function isLeapYear(year){
+//     if(year%400==0 || year%100!=0 && year%4==0){
+//         document.write("Leap year");
+//     }else{
+//         document.write("Not a leap year");
+//     }   
+// }
+
+
+ // *************************************************************************************************************************************
+//  8. Login Authentication
+// Write a function that simulates a simple login system. If the input username is "admin" and the password is "1234", print "Login successful". Otherwise, print "Invalid username or password".
+// Sample Input:
+// login("admin", "1234");     // Output: Login successful
+// login("admin", "wrongPass"); // Output: Invalid username or password
+
+// function login(uname,pass){
+//     if(uname==="admin" && pass==="1234"){
+//         document.write("Login Successfully");
+//     }
+//     else{
+//         document.write("Invalid Username or password");
+//     }
+// }
+// login("admin","1234");
+
+
+ // *************************************************************************************************************************************
+// 9. Check Multiple of 5
+// Write a JavaScript function that checks if a given number is a multiple of 5.
+// •	If the number is divisible by 5, print "The number is a multiple of 5".
+// •	Otherwise, print "The number is not a multiple of 5".
+// Sample Input:
+// checkMultipleOf5(25); // Output: The number is a multiple of 5
+// checkMultipleOf5(18); // Output: The number is not a multiple of 5
+
+// function checkMultipleOf5(no){
+//     if(no%5==0){
+//         document.write("The number is a multiple of 5");
+//     }else{
+//         document.write("The number is not a multiple of 5");
+//     }
+// }
+// checkMultipleOf5(1503)
+
+
+ // *************************************************************************************************************************************
+// 10. Temperature Check
+// Create a function that takes a temperature in Celsius as input and prints:
+// •	"It's cold" if the temperature is less than 15°C.
+// •	"It's warm" if the temperature is between 15°C and 30°C.
+// •	"It's hot" if the temperature is greater than 30°C.
+// Sample Input:
+// checkTemperature(10);  // Output: It's cold
+// checkTemperature(22);  // Output: It's warm
+// checkTemperature(35);  // Output: It's hot
+
+        // function checkTemperature(temperature) {
+        //     if (temperature < 15) {
+        //         document.write("It's cold");
+        //     } else if (temperature >= 15 && temperature <= 30) {
+        //         document.write("<br>It's warm");
+        //     } else if (temperature > 30) {
+        //         document.write("<br>It's hot");
+        //     }
+        // }
+
+        // checkTemperature(10);  // Output: It's cold
+        // checkTemperature(22);  // Output: It's warm
+        // checkTemperature(35);  // Output: It's hot
+
+
+
+    </script>
+</body>
+</html>
